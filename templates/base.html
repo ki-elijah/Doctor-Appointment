@@ -44,13 +44,13 @@
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" href="{% url 'manage' %}">Manage</a>
                     </li>
-                    {% endif %}
-                    {% comment %} <li class="nav-item" role="presentation">
+                    <li class="nav-item" role="presentation">
                         <a href="{% url 'manage' %}" style="float: left;cursor:pointer;" aria-expanded="true" title="You Have 6 New Appointments">
                         <i class="far fa-bell" style="font-size: 20px; float: left; color: black">
                         </i>
                     </a>
-                    <span class="badge badge-danger">{{count}}</span> {% endcomment %}
+                    <span class="badge badge-danger">{{count}}</span>
+                    {% endif %}
                 </li>
                 </ul>
             </div>
