@@ -74,7 +74,7 @@ STATIC_URL = 'static/'
 if DEBUG:
     STATICFILES_DIRS = [BASE_DIR / "static"]
 else:
-    STATIC_ROOT = BASE_DIR / "static"
+    STATIC_ROOT = [BASE_DIR / "static"]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #sending emails
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
